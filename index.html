@@ -1,468 +1,616 @@
-<!-- After cartofe  --> 
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="en">
+
 <head>
-    <!-- so meta --> 
+
+    <!--- basic page needs
+    ================================================== -->
     <meta charset="utf-8">
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	 <meta name="HandheldFriendly" content="True"> -->
+    <title>I'm Jesus</title>
     <meta name="description" content="">
     <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    
-        
-          
-              <link rel="shortcut icon" href="/images/favicon.ico">
-          
-        
-        
-          
-            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
-          
-        
-        
-          
-            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-          
-        
-    
-    <!-- title -->
-    <title>I&#39;m Jesus.</title>
-    <!-- styles -->
-    <link rel="stylesheet" href="/css/default.css">
-    <link rel="stylesheet" href="/css/layout.css">
-    <link rel="stylesheet" href="/css/media-queries.css">
-    <link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <!-- rss -->
-    
-    
-    <!-- jquery -->
-    <script src="/js/modernizr.js"></script>
 
-    <!-- Piwik -->
-    <script type="text/javascript">
-        var _paq = _paq || [];
-        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-        _paq.push(['trackPageView']);
-        _paq.push(['enableLinkTracking']);
-        (function() {
-            var u="//jesus.engineer/espiando/";
-            _paq.push(['setTrackerUrl', u+'piwik.php']);
-            _paq.push(['setSiteId', '1']);
-            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-        })();
-    </script>
-    <!-- End Piwik Code -->
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Google Analytics -->
-    
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/vendor.css">
 
-        ga('create', 'UA-103635753-1', 'auto');
-        ga('send', 'pageview');
+    <!-- script
+    ================================================== -->
+    <script defer src="js/vendor/fontawesome/all.min.js"></script>
 
-    </script>
-    
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
 </head>
 
-    <body>
-	
-	    <header id="home">
-    <div id="nav-wrap">
-	<a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	<a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-	<ul id="nav" class="nav">
-	    
-		<li class="current">
-		    <a class="smoothscroll" href="/#home">Home</a>
-		</li>
-	    
-		<li class="">
-		    <a class="smoothscroll" href="/#about">About</a>
-		</li>
-	    
-		<li class="">
-		    <a class="smoothscroll" href="/#resume">Resume</a>
-		</li>
-	    
-		<li class="">
-		    <a class="smoothscroll" href="/#contact">Contact</a>
-		</li>
-	    
-	    
-	</ul>
+<body id="top" class="ss-preload">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader"></div>
     </div>
 
-    <div class="row banner">
-        <div class="banner-text">
-            <h1 class="responsive-headline">I'm Jesus.</h1>
-            <h3>I'm an <span>engineer</span> with a passion for creating <span>beautiful</span> things. Let's <a class="smoothscroll" href="#about">start scrolling</a> and learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
-            <hr />
-            <ul class="social">
-		
-		    <li><a class="icon" target="_blank" href="http://github.com/jpcano" title=""><i class="fa fa-github"></i></a></li>
-		
-		    <li><a class="icon" target="_blank" href="https://twitter.com/RockingML" title=""><i class="fa fa-twitter"></i></a></li>
-		
-		    <li><a class="icon" target="_blank" href="https://es.linkedin.com/in/jesuscano1" title=""><i class="fa fa-linkedin"></i></a></li>
-		
-		    <li><a class="icon" target="_blank" href="https://www.goodreads.com/review/list/65914426" title=""><i class="fa fa-glide"></i></a></li>
-		
-            </ul>
-        </div>
-    </div>
 
-    <p class="scrolldown">
-        <a class="smoothscroll" href="/#about"><i class="icon-down-circle"></i></a>
-    </p>
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+        <div class="row s-header__nav-wrap">
+            <nav class="s-header__nav">
+                <ul>
+                    <li class="current"><a class="smoothscroll" href="#hero">Home</a></li>
+                    <li><a class="smoothscroll" href="#about">About</a></li>
+                    <li><a class="smoothscroll" href="#resume">Resume</a></li>
+                    <!-- <li><a class="smoothscroll" href="#skills">Skills</a></li> -->
+                    <li><a class="smoothscroll" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div> <!-- end row -->
 
-</header>
-
-        
-	
-<section id="about">
-    <div class="row">
-        <div class="three columns">
-	    <img class="profile-pic"  src="assets/jcanovel.jpg" alt="" />
-        </div>
-        <div class="nine columns main-col">
-	    <h2>About Me</h2>
-	    <p>I am a spanish engineer, currently based in Cambridge, with a passion for OSS development. Currently I am interested in working with <em>frontend reactive architectures</em> and <em>typed languages</em> in <em>meaningful products</em>. I like thin and functional frameworks in the frontend like <em>React</em>, <em>Redux</em>, and <em>Vue</em>. Regarding backend, I would love to keep working with typed languages like <em>Typescript</em> and <em>Rust</em>.</p>
-	    <div class="row">
-		
-		<div class="columns download">
-		    
-		</div>
-	    </div>
-        </div>
-    </div>
-</section>
+        <a class="s-header__menu-toggle" href="#0" title="Menu">
+            <span class="s-header__menu-icon"></span>
+        </a>
+    </header> <!-- end s-header -->
 
 
+    <!-- hero
+    ================================================== -->
+    <section id="hero" class="s-hero target-section">
 
+        <div class="s-hero__bg rellax" data-rellax-speed="-7"></div>
 
+        <div class="row s-hero__content">
+            <div class="column">
 
+                <div class="s-hero__content-about">
 
+                    <h1>I'm Jesus.</h1>
 
-<section id="resume">
-    
-	<div class="row resume-section">
-            <div class="three columns header-col">
-		<h1><span>Experience</span></h1>
+                    <h3>
+                        I'm a <span>software developer</span> with a passion for creating <span>beautiful</span> things.
+                        Let's <a class="smoothscroll" href="#about">start scrolling</a> and learn
+                        more <a class="smoothscroll" href="#about">about me</a>.
+                    </h3>
+
+                    <div class="s-hero__content-social">
+                        <a href="http://github.com/jpcano" target=”_blank”><i class="fab fa-github"
+                                aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/RockingML" target=”_blank”><i class="fab fa-twitter"
+                                aria-hidden="true"></i></a>
+                        <a href="https://es.linkedin.com/in/jesuscano1" target=”_blank”><i class="fab fa-linkedin"
+                                aria-hidden="true"></i></a>
+                        <a href="https://www.goodreads.com/review/list/65914426" target=”_blank”><i
+                                class="fab fa-goodreads" aria-hidden="true"></i></a>
+                    </div>
+
+                </div> <!-- end s-hero__content-about -->
+
             </div>
-            <div class="nine columns main-col">
-		
-		    <div class="row item">
-			<div class="twelve columns">
-			    <h3>Intellegens</h3>
-			    <p class="info">
-				Lead Software Engineer <span>&bull;</span>
-				<em class="date">January 2020</em> <span>&bull;</span>
-				<em class="date">Cambridge, UK</em>
-			    </p>
-			    <p>
-				Leading the development of Alchemite Analytics Platform (a web platform that runs on top of the machine learning API Alchemite). Designing and implementing the UI components, API
-definitions and backend business logic. Designing and implementing a continuous deployment infrastructure from scratch using Docker, Kubernetes and CircleCI. Leading and facilitating
-the Sprint Plannings in the company.
-				</p>
-			</div>
-		    </div> <!-- item end -->
+        </div> <!-- s-hero__content -->
 
-		    <div class="row item">
-			<div class="twelve columns">
-			    <h3>Repositive</h3>
-			    <p class="info">
-				Software Developer <span>&bull;</span>
-				<em class="date">November 2017</em> <span>&bull;</span>
-				<em class="date">Cambridge, UK</em>
-			    </p>
-			    <p>
-				Repositive is changing the way genetics researchers discover and interact with human DNA data. Data access is difficult and time consuming, a bottleneck for advances in cancer and genetic diseases research. Our ambition is to provide a data access process so smooth, it will be as simple as &#39;one click to DNA data access.
-			    </p>
-			</div>
-		    </div> <!-- item end -->
-		
-		    <div class="row item">
-			<div class="twelve columns">
-			    <h3>Alibaba Cloud</h3>
-			    <p class="info">
-				Machine Learning Engineer <span>&bull;</span>
-				<em class="date">March 2017</em> <span>&bull;</span>
-				<em class="date">Remote</em>
-			    </p>
-			    <p>
-				I am participating in the CIKM AnalitiCup 2017. It is a challenge organised by Alibaba cloud where the participants have 4 months to predict short-term rainfall amount using Machine Learning algorthms applied to radar images. I am using Convolutional Neural Networks and regressions with TensorFlow and Scikit-learn over a GPU cluster in Google Cloud ML.
-			    </p>
-			</div>
-		    </div> <!-- item end -->
-		
-		    <div class="row item">
-			<div class="twelve columns">
-			    <h3>Source{d}</h3>
-			    <p class="info">
-				Interviewer <span>&bull;</span>
-				<em class="date">November 2015</em> <span>&bull;</span>
-				<em class="date">Madrid, Spain</em>
-			    </p>
-			    <p>
-				Working as a Developer Relations in a company that looks to understand developers through the code they have written. They analyse the code of +6 million developers using Machine Learning algorithms and help over 100 customers get introduced to developers. I worked analysing the code of the developers to asses their quality. Also I developed tools using Go, Python, Qt, BigQuery and MongoDB to speed up the process of finding developers.
-			    </p>
-			</div>
-		    </div> <!-- item end -->
-		
-		    <div class="row item">
-			<div class="twelve columns">
-			    <h3>Professor</h3>
-			    <p class="info">
-				www.compvter.net/clasesjesus <span>&bull;</span>
-				<em class="date">July 2015</em> <span>&bull;</span>
-				<em class="date">Madrid, Spain</em>
-			    </p>
-			    <p>
-				I had a group of two university students and two professionals. Taught Python, SQL, PL/SQL, MySQL and Oracle Database design and administration and XML.
-			    </p>
-			</div>
-		    </div> <!-- item end -->
-		
-		    <div class="row item">
-			<div class="twelve columns">
-			    <h3>Gigas Hosting</h3>
-			    <p class="info">
-				Fullstack Engineer Intern <span>&bull;</span>
-				<em class="date">February 2015</em> <span>&bull;</span>
-				<em class="date">Alcobendas, Spain</em>
-			    </p>
-			    <p>
-				Improved a workflow tool (Bonita BPM) implementing an OAuth authentication with Google services and integrating it with other internal software. Programming in JavaScript, Java and Python.
-			    </p>
-			</div>
-		    </div> <!-- item end -->
-		
-		    <div class="row item">
-			<div class="twelve columns">
-			    <h3>IETR</h3>
-			    <p class="info">
-				Research Engineer <span>&bull;</span>
-				<em class="date">February 2014</em> <span>&bull;</span>
-				<em class="date">Rennes, France</em>
-			    </p>
-			    <p>
-				I ported openHEVC (an HEVC/H.265 video decoder) to ARM and Texas Intruments DSP platforms, measured its performance and optimized it by using the Advanced SIMD extension (NEON) for ARM.
-			    </p>
-			</div>
-		    </div> <!-- item end -->
-		
-	    </div>
-	</div>
-    
-	<div class="row resume-section">
-            <div class="three columns header-col">
-		<h1><span>Education</span></h1>
+        <div class="s-hero__scroll">
+            <a href="#about" class="s-hero__scroll-link smoothscroll">
+                <span class="scroll-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:">
+                        <path
+                            d="M18.707 12.707L17.293 11.293 13 15.586 13 6 11 6 11 15.586 6.707 11.293 5.293 12.707 12 19.414z">
+                        </path>
+                    </svg>
+                </span>
+                <span class="scroll-text">Scroll Down</span>
+            </a>
+        </div> <!-- s-hero__scroll -->
+
+    </section> <!-- end s-hero -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+        <div class="row">
+            <div class="column large-3 tab-12">
+                <img class="s-about__pic" src="images/avatars/jcanovel.jpg" alt="">
             </div>
-            <div class="nine columns main-col">
-		
-		    <div class="row item">
-			<div class="twelve columns">
-			    <h3>Udacity</h3>
-			    <p class="info">
-				Machine Learning Engineer Nanodegree <span>&bull;</span>
-				<em class="date">December 2016</em> <span>&bull;</span>
-				<em class="date">Remote</em>
-			    </p>
-			    <p>
-				Supervised and unsupervised learning, TensorFlow, NN, CNN, scikit-learn.
-			    </p>
-			</div>
-		    </div> <!-- item end -->
-		
-		    <div class="row item">
-			<div class="twelve columns">
-			    <h3>Universidad Politécnica de Madrid</h3>
-			    <p class="info">
-				Master in Systems and Services for the Information Society <span>&bull;</span>
-				<em class="date">2014</em> <span>&bull;</span>
-				<em class="date">Madrid, Spain</em>
-			    </p>
-			    <p>
-				Final project in the field of Machine Learning.
-			    </p>
-			</div>
-		    </div> <!-- item end -->
-		
-		    <div class="row item">
-			<div class="twelve columns">
-			    <h3>Institut des Sciences Apliquées INSA</h3>
-			    <p class="info">
-				Electronique et Informatique Industruelle, 5th year <span>&bull;</span>
-				<em class="date">2013</em> <span>&bull;</span>
-				<em class="date">Rennes, France</em>
-			    </p>
-			    <p>
-				Image processing, computer vision and embedded systems.
-			    </p>
-			</div>
-		    </div> <!-- item end -->
-		
-		    <div class="row item">
-			<div class="twelve columns">
-			    <h3>Universidad Politécnica de Madrid</h3>
-			    <p class="info">
-				Degree in Telecommunication Engineering <span>&bull;</span>
-				<em class="date">2008</em> <span>&bull;</span>
-				<em class="date">Madrid, Spain</em>
-			    </p>
-			    <p>
-				Electronic communication systems.
-			    </p>
-			</div>
-		    </div> <!-- item end -->
-		
-	    </div>
-	</div>
-    
-    
-    <div class="row skill">
-        <div class="three columns header-col">
-            <h1><span>Skills</span></h1>
-        </div>
-        <div class="nine columns main-col">
-            <p></p>
-	    <div class="bars">
-		<ul class="skills">
-		    
-			<li><span class="bar-expand" style="width:100%;"></span>
-			    <em>Ember.js</em>
-			</li>
-		    
-			<li><span class="bar-expand" style="width:100%;"></span>
-			    <em>Node.js / ES5 / ES6</em>
-			</li>
-		    
-			<li><span class="bar-expand" style="width:100%;"></span>
-			    <em>Typescript</em>
-			</li>
-		    
-			<li><span class="bar-expand" style="width:100%;"></span>
-			    <em>React / Redux</em>
-			</li>
-		    
-			<li><span class="bar-expand" style="width:80%;"></span>
-			    <em>HEVC / h.265</em>
-			</li>
-		    
-			<li><span class="bar-expand" style="width:60%;"></span>
-			    <em>Machine Learning</em>
-			</li>
-		    
-			<li><span class="bar-expand" style="width:50%;"></span>
-			    <em>Rust</em>
-			</li>
-		    
-		</ul>
-	    </div>
-	</div>
-    </div>
-    
-</section>
+            <div class="column large-9 tab-12 s-about__content">
+                <h3>About Me</h3>
+                <p>
+                    I am a spanish engineer, currently based in Cambridge, with a passion for OSS development. Currently
+                    I am interested in working with frontend reactive architectures and <b>typed languages</b> in
+                    <b>meaningful products</b>. I like thin and functional frameworks in the frontend like
+                    <b>React</b>. Regarding backend, I would love to keep working with languages like
+                    <b>Typescript</b> and <b>Rust</b>.
+                </p>
+                <!--                 <p>
+                    I am a spanish engineer, currently based in Cambridge, with a passion for OSS development. Currently
+                    I am interested in working with frontend reactive architectures and <em>typed languages</em> in
+                    <em>meaningful products</em>. I like thin and functional frameworks in the frontend like
+                    <em>React</em>, <em>Redux</em>, and <em>Vue</em>. Regarding backend, I would love to keep working
+                    with typed languages like <em>Typescript</em> and <em>Rust</em>.
+                </p> -->
 
+                <hr>
 
+                <div class="row s-about__content-bottom">
+                    <div class="column w-1000-stack">
+                        <h3>Contact Details</h3>
 
-<section id="contact">
-    <div class="row section-head">
-        <div class="two columns header-col">
-            <h1><span>Get In Touch.</span></h1>
-        </div>
-        <div class="ten columns">
-            <p class="lead">Email me directly to <a href='&#109;ailt&#111;&#58;m%65&#64;&#106;esus&#46;e%6E%67%&#54;&#57;n%f65&#37;&#54;5&#114;'>me&#64;jesu&#115;&#46;en&#103;ine&#101;r</a> or send a message via the contact form and I will get back to you as soon as possible. Promise! </p>
-        </div>
-    </div>
+                        <p>
+                            Jesus Cano <br>
+                            The Studio, French's Road <br>
+                            Cambridge, United Kingdom <br>
+                            CB4 3NP <br>
+                            <a href="mailto:me@jesus.engineer">me@jesus.engineer</a>
+                        </p>
 
-    <div class="row">
-        <div class="ten columns">
-            <form method="POST" action="https://formspree.io/m%65&#64;&#106;esus&#46;e%6E%67%&#54;&#57;n%65&#37;&#54;5&#114;" id="contactForm" name="contactForm">
-		<fieldset>
-                    <div>
-			<label for="contactName">Name <span class="required">*</span></label>
-			<input type="text" value="" size="35" id="contactName" name="Name">
                     </div>
-                    <div>
-			<label for="contactEmail">Email <span class="required">*</span></label>
-			<input type="text" value="" size="35" id="contactEmail" name="Email">
+                    <div class="column w-1000-stack">
+                        <a href="#contact" class="btn btn--download">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:">
+                                <path d="M12 16L16 11 13 11 13 4 11 4 11 11 8 11z"></path>
+                                <path d="M20,18H4v-7H2v7c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2v-7h-2V18z"></path>
+                            </svg>
+                            Full CV
+                        </a>
                     </div>
-                    <!-- <div>
-			 <label for="contactSubject">Subject</label>
-			 <input type="text" value="" size="35" id="contactSubject" name="Subject">
-			 </div> -->
-                    <div>
-			<label for="contactMessage">Message <span class="required">*</span></label>
-			<textarea cols="50" rows="12" id="contactMessage" name="Message"></textarea>
-                    </div>
-                    <div>
-			<button class="submit">Submit</button>
-			<span id="image-loader">
-                            <img alt="" src="images/loader.gif">
-			</span>
-                    </div>
-		</fieldset>
-	    </form> <!-- Form End -->
+                </div>
+            </div>
+        </div> <!-- end row -->
 
-            <!-- contact-warning -->
-            <div id="message-warning">You need to enter all the required fields and a valid email address.</div>
-            <!-- contact-success -->
-	    <div id="message-success">
-                <i class="fa fa-check"></i>Thank you! Now I will test if your are a human<br>
-	    </div>
+    </section> <!-- end s-about -->
 
+
+    <!-- resume
+    ================================================== -->
+    <section id="resume" class="s-resume target-section">
+
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Career</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Intellegens</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Lead Software Developer</span>
+                            <span class="resume-block__header-date">
+                                May 2023
+                            </span>
+                            <span class="resume-block__header-date">
+                                Cambridge, UK
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        In this new role, I am leading the development of the web platform Alchemite Analytics™:
+                    </p>
+                    <ul>
+                        <li>Writing <b>React</b> components using <b>TypeScript</b>.</li>
+                        <li>Writing the frontend deployment pipeline with <b>Kubernetes</b>, <b>Helm</b> and
+                            <b>CircleCI</b>.
+                        </li>
+                        <li>Building the team and introducing <b>agile</b> practices in order to build a succesful
+                            product.</li>
+                        <li><b>Line managing</b> the <b>Frontend</b> team with weekly catch-ups.</li>
+                        <li><b>Hiring</b> frontend and fullstack developers: reviewing CV, conducting interviews and
+                            reporting to Human Resources.</li>
+                        <li>I built a machine learning framework for <b>Edge Devices</b> using the chip
+                            <b>nrf52832</b> from <b>Nordic Semiconductors</b>, using <b>C</b> language and <b>Zephyr
+                                RTOS</b>. Then I built a <b>hardware prototype</b> to demonstrate our software to one of
+                            our customers.
+                        </li>
+
+                    </ul>
+
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <p class="resume-block__header-meta">
+                            <span>Senior Software Engineer</span>
+                            <span class="resume-block__header-date">
+                                January 2020
+                            </span>
+                            <span class="resume-block__header-date">
+                                Cambridge, UK
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        I was hired to start, from sratch, the development of the main product of the company called
+                        Alchemite Analytics™, a <b>web platform</b>
+                        used to train, deploy and visualize <b>machine learning</b> models from sparse and noisy
+                        datasets.
+                    </p>
+                    <ul>
+                        <li>I defined the programming languages and main libraries to use: <b>TypeScript</b> and
+                            <b>React</b>.
+                        </li>
+                        <li>I implemented the <b>React UI</b> components and the initial <b>design language</b>.</li>
+                        <li>I designed and implemented a <b>GraphQL</b> backend on <b>Node.js</b> for rapid
+                            development of API endpoints.</li>
+                        <li>I designed and implemented a continuous integration infrastructure from scratch using
+                            <b>Docker</b>, <b>Kubernetes</b>,
+                            <b>CircleCI</b> and <b>GitHub monorepos</b>.
+                        </li>
+                    </ul>
+
+
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Repositive</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Software Developer</span>
+                            <span class="resume-block__header-date">
+                                November 2017
+                            </span>
+                            <span class="resume-block__header-date">
+                                Cambridge, UK
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        I has hired to work on Repositive PDX cancer models platform to change the way
+                        genetics researchers discover and interact with human DNA data:
+                    </p>
+                    <ul>
+                        <li>Writing the main <b>frontend</b> application using <b>Ember.js</b> and <b>JavaScript
+                                ES6</b>.</li>
+                        <li>Writing unit and integration tests using <b>Ember Miraje</b>.</li>
+                        <li>Writing <b>Swagger/OpenAPI</b> schemas for new API enpoints.</li>
+                        <li>Writing business logic and API enpoints for a <b>microservices</b> <b>backend</b> using
+                            <b>TypeScript.</b>
+                        </li>
+                    </ul>
+
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Alibaba Cloud (contest)</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Software Developer</span>
+                            <span class="resume-block__header-date">
+                                March 2017
+                            </span>
+                            <span class="resume-block__header-date">
+                                Remote
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        I am participating in the CIKM AnalitiCup 2017. It is a challenge organised by Alibaba cloud
+                        where the participants have 4 months to predict short-term rainfall amount using Machine
+                        Learning algorithms applied to radar images. I am using Convolutional Neural Networks and
+                        regressions with TensorFlow and Scikit-learn over a GPU cluster in Google Cloud ML.
+                    </p>
+
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Source{d}</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Interviewer</span>
+                            <span class="resume-block__header-date">
+                                November 2015
+                            </span>
+                            <span class="resume-block__header-date">
+                                Madrid, Spain
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        Working as a Developer Relations in a company that looks to understand developers through the
+                        code they have written. They analyse the code of +6 million developers using Machine Learning
+                        algorithms and help over 100 customers get introduced to developers. I worked analysing the code
+                        of the developers to asses their quality. Also I developed tools using Go, Python, Qt, BigQuery
+                        and MongoDB to speed up the process of finding developers.
+                    </p>
+
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Gigas Hosting</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Software Developer Intern</span>
+                            <span class="resume-block__header-date">
+                                February 2015
+                            </span>
+                            <span class="resume-block__header-date">
+                                Alcobendas, Spain
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        Improved a workflow tool (Bonita BPM) implementing an OAuth authentication with Google services
+                        and integrating it with other internal software. Programming in JavaScript, Java and Python.
+                    </p>
+
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">IETR</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Research Engineer</span>
+                            <span class="resume-block__header-date">
+                                February 2014
+                            </span>
+                            <span class="resume-block__header-date">
+                                Rennes, France
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        I ported openHEVC (an HEVC/H.265 video decoder) to ARM and Texas Intruments DSP platforms,
+                        measured its performance and optimized it by using the Advanced SIMD extension (NEON) for ARM.
+                    </p>
+
+                </div> <!-- end resume-block -->
+
+            </div>
+        </div> <!-- s-resume__section -->
+
+
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Education</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Technical University of Madrid</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Master in Systems and Services for the Information Society</span>
+                            <span class="resume-block__header-date">
+                                2014
+                            </span>
+                            <span class="resume-block__header-date">
+                                Madrid, Spain
+                            </span>
+
+                        </p>
+                    </div>
+
+                    <p>
+                        Final project in the field of Machine Learning.
+                    </p>
+
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Institut des Sciences Apliquées INSA</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Electronique et Informatique Industruelle, 5th year</span>
+                            <span class="resume-block__header-date">
+                                2013
+                            </span>
+                            <span class="resume-block__header-date">
+                                Rennes, France
+                            </span>
+
+                        </p>
+                    </div>
+
+                    <p>
+                        Image processing, computer vision and embedded systems.
+                    </p>
+
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Technical University of Madrid</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Degree in Telecommunication Engineering</span>
+                            <span class="resume-block__header-date">
+                                2008
+                            </span>
+                            <span class="resume-block__header-date">
+                                Madrid, Spain
+                            </span>
+
+                        </p>
+                    </div>
+
+                    <p>
+                        Electronic communication systems.
+                    </p>
+
+                </div> <!-- end resume-block -->
+            </div>
+        </div> <!-- s-resume__section -->
+
+
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Skills</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+
+                    <ul class="skill-bars-fat">
+                        <li>
+                            <div class="progress percent100"></div>
+                            <strong>JavaScript / Node.js</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent100"></div>
+                            <strong>React.js / Ember.js</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent100"></div>
+                            <strong>TypeScript</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent100"></div>
+                            <strong>C</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent75"></div>
+                            <strong>Rust</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent90"></div>
+                            <strong>Python</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent100"></div>
+                            <strong>REST, GraphQL, OpenAPI</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent100"></div>
+                            <strong>Jest / Testing Library / Cypress / Pupeeteer</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent100"></div>
+                            <strong>CircleCI / GitHub Actions</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent90"></div>
+                            <strong>Docker / Kubernetes / Helm</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent90"></div>
+                            <strong>Google Cloud / AWS</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent90"></div>
+                            <strong>Embedded Systems (nrf52, Nordic Semiconductors)</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent50"></div>
+                            <strong>Machine Learning</strong>
+                        </li>
+                    </ul>
+
+                </div> <!-- end resume-block -->
+
+            </div>
+        </div> <!-- s-resume__section -->
+
+    </section> <!-- end s-resume -->
+
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact target-section">
+
+        <div class="row s-contact__header">
+            <div class="column large-12">
+                <h3 class="section-header-allcaps">Contact</h3>
+            </div>
         </div>
 
-</section> <!-- Contact Section End-->
+        <div class="row s-contact__content">
+
+            <div class="column large-7 medium-12">
+
+                <h4 class="huge-text">
+                    Have a new project in mind? Let's collaborate and build something awesome.
+                    Let's turn that idea to an even greater product :)
+                </h4>
+
+            </div>
+
+            <div class="column large-4 medium-12">
+
+                <div class="row contact-infos">
+                    <div class="column large-12 medium-6 tab-12">
+                        <div class="contact-block">
+                            <h5 class="contact-block__header">
+                                Email
+                            </h5>
+                            <p class="contact-block__content">
+                                <a class="mailtoui" href="mailto:me@jesus.engineer">me@jesus.engineer</a>
+                            </p>
+                        </div> <!-- end contact-block -->
+                    </div>
+
+                    <div class="column large-12">
+                        <a href="mailto:me@jesus.engineer" class="mailtoui btn btn--primary h-full-width">Let's
+                            Talk</a>
+                    </div>
+                </div> <!-- end contact-infos -->
+
+            </div>
+        </div> <!-- s-contact__content -->
+
+    </section> <!-- end s-contact -->
 
 
-	<footer>
-    <div class="row">
-        <div class="twelve columns">
-            <ul class="social-links">
-		
-		    <li><a class="icon" target="_blank" href="http://github.com/jpcano" title=""><i class="fa fa-github"></i></a></li>
-		
-		    <li><a class="icon" target="_blank" href="https://twitter.com/RockingML" title=""><i class="fa fa-twitter"></i></a></li>
-		
-		    <li><a class="icon" target="_blank" href="https://es.linkedin.com/in/jesuscano1" title=""><i class="fa fa-linkedin"></i></a></li>
-		
-		    <li><a class="icon" target="_blank" href="https://www.goodreads.com/review/list/65914426" title=""><i class="fa fa-glide"></i></a></li>
-		
-            </ul>
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer">
+        <div class="row">
+            <div class="column large-4 medium-6 w-1000-stack s-footer__social-block">
+                <ul class="s-footer__social">
+                    <li><a href="http://github.com/jpcano" target=”_blank”><i class="fab fa-github"
+                                aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/RockingML" target=”_blank”><i class="fab fa-twitter"
+                                aria-hidden="true"></i></a></li>
+                    <li><a href="https://es.linkedin.com/in/jesuscano1" target=”_blank”><i class="fab fa-linkedin"
+                                aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.goodreads.com/review/list/65914426" target=”_blank”><i
+                                class="fab fa-goodreads" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
 
-            <ul class="copyright">
-		<li>Copyright &copy; 2021 Jes&uacute;s Ca&ntilde;o</li>
-		<li>Theme <a href="https://github.com/jpcano/neural" target="_blank">neural</a> by Jes&uacute;s Ca&ntilde;o</li>
-            </ul>
-
+            <div class="column large-7 medium-6 w-1000-stack ss-copyright">
+                <span>© Copyright Jesus Cano 2023</span>
+                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+            </div>
         </div>
-	<!-- TODO: Does not work with smoothscroll -->
-        <div id="go-top"><a class="" title="Back to Top" href="#top"><i class="icon-up-open"></i></a></div>
 
-    </div>
-
-</footer> <!-- Footer End-->
-
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-<script src="/js/jquery-migrate-1.2.1.min.js"></script>
-<script src="/js/waypoints.js"></script>
-<script src="/js/jquery.fittext.js"></script>
-<script src="/lib/justified-gallery/jquery.justifiedGallery.min.js"></script>
-<script src="/js/Autolinker.min.js"></script>
-<script src="/js/init.js"></script>
-
-<!-- Disqus Comments -->
+        <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z" />
+                </svg>
+            </a>
+        </div> <!-- end ss-go-top -->
+    </footer>
 
 
-    </body>
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
 </html>
