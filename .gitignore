@@ -22,3 +22,9 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Visual Studio Code workspace settings
+.vscode
+
+# Some zip files I have in the root folder
+/*.zip
