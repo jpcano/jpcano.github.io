@@ -2,5 +2,10 @@
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
     "strictNullChecks": true
-  }
+  },
+  "exclude": [
+    "public/camend2019",
+    "public/carto-fe1",
+    "public/radarweb",
+  ]
 }
