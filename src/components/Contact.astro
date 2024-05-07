@@ -1,0 +1,144 @@
+<section id="contact" class="s-contact target-section">
+  <div class="row s-contact__header">
+    <div class="column large-12">
+      <h3 class="section-header-allcaps">Contact</h3>
+    </div>
+  </div>
+
+  <div class="row s-contact__content">
+    <div class="column large-7 medium-12">
+      <h4 class="huge-text">
+        Have a new project in mind? Let's collaborate and build something
+        awesome. Let's turn that idea to an even greater product :)
+      </h4>
+    </div>
+
+    <div class="column large-4 medium-12">
+      <div class="row contact-infos">
+        <div class="column large-12 medium-6 tab-12">
+          <div class="contact-block">
+            <h5 class="contact-block__header">Email</h5>
+            <p class="contact-block__content">
+              <a class="mailtoui" href="mailto:me@jesus.engineer"
+                >me@jesus.engineer</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="column large-12">
+          <a
+            href="mailto:me@jesus.engineer"
+            class="mailtoui btn btn--primary h-full-width">Let's Talk</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .s-contact {
+    background-color: var(--color-gray-18);
+    padding-top: calc(6 * var(--space));
+    padding-bottom: var(--vspace-3_5);
+  }
+
+  .s-contact .section-header-allcaps {
+    color: white;
+    margin-bottom: var(--vspace-2_5);
+  }
+
+  .s-contact .huge-text {
+    color: white;
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 4.6rem;
+    line-height: 1.304;
+  }
+
+  .s-contact__content [class*="column"]:last-child {
+    margin-left: auto;
+  }
+
+  .contact-infos .btn {
+    margin-top: var(--vspace-0_75);
+  }
+
+  .contact-block {
+    font-size: 2.8rem;
+    font-weight: 400;
+    line-height: 1.286;
+  }
+
+  .contact-block a {
+    color: white;
+  }
+
+  .contact-block a:hover,
+  .contact-block a:focus {
+    color: var(--color-2);
+  }
+
+  .contact-block__header {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.4);
+    margin-top: 0;
+    margin-bottom: 0.2rem;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .s-contact {
+      padding-bottom: var(--vspace-2);
+    }
+    .s-contact__content .column {
+      margin: 0;
+    }
+    .s-contact__content > .column:first-child {
+      margin-bottom: var(--vspace-2);
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .s-contact {
+      padding-top: var(--vspace-5);
+    }
+    .s-contact__header {
+      text-align: center;
+    }
+    .s-contact .huge-text {
+      font-size: 4.2rem;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .s-contact .huge-text {
+      font-size: 3.4rem;
+    }
+    .contact-block {
+      font-size: 2.6rem;
+    }
+    .contact-block__header {
+      font-size: 1.8rem;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .s-contact .huge-text {
+      font-size: 3.2rem;
+    }
+    .contact-block {
+      font-size: 2.2rem;
+    }
+    .contact-block__header {
+      font-size: 1.6rem;
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+    .s-contact .huge-text {
+      font-size: 3rem;
+    }
+  }
+</style>

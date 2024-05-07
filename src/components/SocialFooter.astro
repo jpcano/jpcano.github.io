@@ -1,0 +1,64 @@
+---
+import "../styles/variables.css";
+import socialData from "./SocialData";
+import { Icon } from "astro-icon/components";
+---
+
+<ul>
+  {
+    socialData.map((social) => (
+      <li>
+        <a href={social.link} target="”_blank”">
+          <i aria-hidden="true">
+            <Icon name={social.icon} title={social.title} />
+          </i>
+        </a>
+      </li>
+    ))
+  }
+</ul>
+<style>
+  ul {
+    list-style: none;
+    font-size: var(--text-lg);
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+    margin: 0 0 0 0.4rem;
+    position: relative;
+    top: -6%;
+  }
+
+  a {
+    color: white;
+  }
+
+  a:focus,
+  a:hover {
+    color: var(--color-2);
+  }
+
+  li {
+    padding-left: 0;
+    margin-right: 1.6rem;
+  }
+  @media screen and (max-width: 1000px) {
+    ul {
+      margin-left: 0;
+      margin-bottom: var(--vspace-0_5);
+      top: 0;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    ul {
+      font-size: var(--text-md);
+    }
+    li {
+      margin-right: 1.4rem;
+    }
+  }
+</style>

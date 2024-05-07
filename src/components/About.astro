@@ -1,0 +1,158 @@
+---
+import { Image } from "astro:assets";
+import jcanovel from "../images/jcanovel.jpg";
+---
+
+<section id="about" class="s-about target-section">
+  <div class="row">
+    <div class="column large-3 tab-12">
+      <Image class="s-about__pic" src={jcanovel} alt="Jesus Cano portrait" />
+    </div>
+    <div class="column large-9 tab-12 s-about__content">
+      <h3>About Me</h3>
+      <p>
+        I am a spanish engineer, currently based in Cambridge, with a passion
+        for OSS development. Currently I am interested in working in <b
+          >contracting</b
+        > projects in the area of <b>Edge AI</b> and <b
+          >data-intensive fullstack</b
+        > applications. I like <b>leading teams</b> and projects.
+      </p>
+
+      <hr />
+
+      <div class="row s-about__content-bottom">
+        <div class="column w-1000-stack">
+          <h3>Contact Details</h3>
+
+          <p>
+            Jesus Cano <br />
+            Cambridge, United Kingdom <br />
+            CB4 1UL <br />
+            <a href="mailto:me@jesus.engineer">me@jesus.engineer</a>
+          </p>
+        </div>
+        <div class="column w-1000-stack">
+          <a href="#contact" class="btn btn--download">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"
+            >
+              <path d="M12 16L16 11 13 11 13 4 11 4 11 11 8 11z"></path>
+              <path
+                d="M20,18H4v-7H2v7c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2v-7h-2V18z"
+              ></path>
+            </svg>
+            Full CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  .s-about {
+    --color-border: var(--color-gray-16);
+    background-color: var(--color-gray-17);
+    padding-top: calc(6 * var(--space));
+    padding-bottom: var(--vspace-4);
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  .s-about b {
+    color: var(--color-gray-4);
+  }
+
+  .s-about h3 {
+    margin-top: 0;
+    color: white;
+  }
+
+  .s-about__pic {
+    width: var(--vspace-5);
+    height: var(--vspace-5);
+    border: 1.6rem solid rgba(255, 255, 255, 0.02);
+    border-radius: 50%;
+  }
+
+  .s-about__content-bottom {
+    margin-top: var(--vspace-2);
+  }
+
+  .s-about__content-bottom a {
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  .s-about__content-bottom a:hover,
+  .s-about__content-bottom a:focus {
+    color: white;
+  }
+
+  .s-about__content-bottom .btn--download {
+    background-color: white;
+    border-color: white;
+    color: black;
+    margin-right: 0;
+  }
+
+  .s-about__content-bottom .btn--download svg {
+    height: 2rem;
+    width: 2rem;
+    vertical-align: middle;
+    margin-right: 1.2rem;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .s-about__content-bottom .btn--download:hover,
+  .s-about__content-bottom .btn--download:focus {
+    background-color: var(--color-2);
+    border-color: var(--color-2);
+  }
+
+  .s-about__content-bottom .btn--download:hover svg path,
+  .s-about__content-bottom .btn--download:focus svg path {
+    fill: white;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .s-about__pic {
+      width: var(--vspace-4_5);
+      height: var(--vspace-4_5);
+      border-width: 1.4rem;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .s-about__pic {
+      width: var(--vspace-4);
+      height: var(--vspace-4);
+      border-width: 1.2rem;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .s-about {
+      padding-top: var(--vspace-5);
+    }
+    .s-about__pic {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .s-about__content-bottom .btn--download {
+      margin-top: var(--vspace-0_5);
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+    .s-about__content-bottom .btn--download svg {
+      display: none;
+    }
+  }
+</style>
