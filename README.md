@@ -1,5 +1,7 @@
 # Jesus Cano's personal website
 
+![Website wallpaper](https://github.com/jpcano/jpcano.github.io/blob/master/src/images/hero.png)
+
 Features:
 
 - ✅ Minimal styling (make it your own!)
