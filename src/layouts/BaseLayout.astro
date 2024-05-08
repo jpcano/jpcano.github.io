@@ -1,0 +1,31 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import Tawk from "../components/Tawk.astro";
+
+const {
+  current,
+  animateHeader,
+  withBorder,
+  title = SITE_TITLE,
+  description = SITE_DESCRIPTION,
+} = Astro.props;
+---
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <BaseHead title={title} description={description} />
+  </head>
+
+  <body id="top" class="ss-preload">
+    <Header current={current} animateHeader={animateHeader} />
+
+    <slot />
+
+    <Footer withBorder={withBorder} />
+    <Tawk />
+  </body>
+</html>
