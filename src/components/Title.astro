@@ -232,22 +232,6 @@ import SocialTitle from "./SocialTitle.astro";
   .ss-preload .s-hero__content {
     opacity: 0;
   }
-  .ss-loaded .s-header,
-  .ss-loaded .s-hero {
-    visibility: visible;
-    opacity: 1;
-  }
-  .ss-loaded .s-hero__content {
-    -webkit-animation-name: fadeInUp;
-    animation-name: fadeInUp;
-    -webkit-animation-duration: 3s;
-    animation-duration: 3s;
-    -webkit-animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-    animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-  }
-
   @media screen and (max-width: 1600px) {
     .s-hero__content h1 {
       font-size: 9.4rem;
