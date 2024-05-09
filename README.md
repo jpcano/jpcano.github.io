@@ -1,6 +1,6 @@
 # Jesus Cano's personal website
 
-![Website wallpaper](https://github.com/jpcano/jpcano.github.io/blob/master/src/images/hero.png)
+![Website wallpaper](https://github.com/jpcano/jpcano.github.io/blob/master/src/images/hero2.jpg)
 
 View [demo](https://jesus.engineer).
 
@@ -51,9 +51,10 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
+| `./preview`               | Builds and preview your build                    |
 
 ## Credit
 
-The blog systems is based off the [Official Astro Blog](https://github.com/withastro/astro/tree/create-astro%404.7.1/examples/blog). And this one is based off the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+The blog system is based off the [Official Astro Blog](https://github.com/withastro/astro/tree/create-astro%404.7.1/examples/blog). And this one is based off the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
 
-Part of the design of the website is based off the beautiful template by [Styleshout](https://www.styleshout.com/).
+The design is based off the beautiful template by [Styleshout](https://www.styleshout.com/).
