@@ -14,14 +14,13 @@ const posts = (await getCollection("blog")).sort(
     <div class="row">
       <ul>
         {
-          posts.map((post) => (
+          posts.map((post, i) => (
             <li>
               <a href={`/blog/${post.slug}/`} aria-label={post.data.title}>
                 <Image
                   src={post.data.heroImage}
                   alt={post.data.title}
-                  width={720}
-                  height={360}
+                  width={i == 0 ? 1080 : 1080 / 2}
                 />
                 <h4 class="title">{post.data.title}</h4>
                 <p class="date">

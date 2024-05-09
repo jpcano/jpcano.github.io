@@ -1,0 +1,30 @@
+---
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+
+interface Props {
+  publicImage: string;
+}
+
+const { publicImage }: Props = Astro.props;
+
+const BLOG_WIDTH = 1080;
+
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/public/images/*.{jpeg,JPEG,jpg,JPG}"
+);
+
+if (!images[`/public/images/${publicImage}`]) {
+  throw new Error(
+    `"${publicImage}" does not exist in glob: "/public/images/*.{jpeg,JPEG,jpg,JPG}"`
+  );
+}
+---
+
+<a href={"/images/" + publicImage}
+  ><Image
+    src={images[`/public/images/${publicImage}`]()}
+    alt={publicImage}
+    width={BLOG_WIDTH}
+  /></a
+>
