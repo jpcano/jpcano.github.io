@@ -3,6 +3,7 @@ import type { CollectionEntry } from "astro:content";
 import FormattedDate from "../components/FormattedDate.astro";
 import { Image } from "astro:assets";
 import BaseLayout from "./BaseLayout.astro";
+import { POST_WIDTH } from "../consts";
 
 type Props = CollectionEntry<"blog">["data"];
 
@@ -15,7 +16,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
       <a class="index-button" href="/blog">Back to index</a>
       <article>
         <div class="hero-image">
-          <Image src={heroImage} alt={title} width={1020} height={510} />
+          <Image src={heroImage} alt={title} width={POST_WIDTH} height={510} />
         </div>
         <div class="prose">
           <div class="title">
@@ -40,11 +41,23 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
   </main>
 </BaseLayout>
 
-<style>
+<style define:vars={{ postWidth: POST_WIDTH }}>
   main {
     background-color: white;
     padding-top: calc(4 * var(--space));
     padding-bottom: var(--vspace-4);
+  }
+  .row {
+    width: 92%;
+    max-width: calc(var(--postWidth) * 1px);
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
   }
   .hero-image {
     width: 100%;
@@ -77,14 +90,28 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
   .last-updated-on {
     font-style: italic;
   }
-  @media screen and (max-width: 800px) {
-    main {
-      padding-top: var(--vspace-4);
-    }
-  }
   .index-button {
     max-width: calc(100% - 2em);
     padding: 1em;
     margin-bottom: 4rem;
+  }
+  @media screen and (max-width: 800px) {
+    main {
+      padding-top: var(--vspace-4);
+    }
+    .row {
+      width: 90%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .row {
+      width: 100%;
+      padding-left: 0vw;
+      padding-right: 0vw;
+    }
+    .prose {
+      padding: 0em;
+    }
   }
 </style>
