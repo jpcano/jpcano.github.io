@@ -3,4 +3,4 @@
 
 export const SITE_TITLE = "I'm Jesus";
 export const SITE_DESCRIPTION = 'Jesus Cano personal website';
-export const POST_WIDTH = 1000;
+export const POST_WIDTH = 990;
