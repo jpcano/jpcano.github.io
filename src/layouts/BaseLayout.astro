@@ -9,6 +9,7 @@ const {
   current,
   animateHeader,
   withBorder,
+  withIntercom,
   title = SITE_TITLE,
   description = SITE_DESCRIPTION,
 } = Astro.props;
@@ -27,6 +28,6 @@ const {
     <slot />
 
     <Footer withBorder={withBorder} />
-    <Tawk />
+    {withIntercom && <Tawk />}
   </body>
 </html>
