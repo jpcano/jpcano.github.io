@@ -1,16 +1,22 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import FormattedDate from "../components/FormattedDate.astro";
-import { Image } from "astro:assets";
+import { Image, getImage } from "astro:assets";
 import BaseLayout from "./BaseLayout.astro";
 import { POST_WIDTH } from "../consts";
 
 type Props = CollectionEntry<"blog">["data"];
 
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const ogImage = await getImage({ src: heroImage, format: "jpg", width: 250 });
 ---
 
-<BaseLayout title={title} description={description} current="/blog">
+<BaseLayout
+  title={title}
+  description={description}
+  current="/blog"
+  ogImage={ogImage}
+>
   <main>
     <div class="row">
       <a class="index-button" href="/blog">Back to index</a>

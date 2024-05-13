@@ -12,6 +12,7 @@ const {
   withIntercom,
   title = SITE_TITLE,
   description = SITE_DESCRIPTION,
+  ogImage,
 } = Astro.props;
 ---
 
@@ -19,7 +20,7 @@ const {
 <html lang="en">
   <head>
     {import.meta.env.PROD && <Analytics />}
-    <BaseHead title={title} description={description} />
+    <BaseHead title={title} description={description} ogImage={ogImage} />
   </head>
 
   <body id="top" class="ss-preload">
