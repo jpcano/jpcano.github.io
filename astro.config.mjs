@@ -6,5 +6,5 @@ import icon from "astro-icon";
 
 export default defineConfig({
   site: 'https://jesus.engineer',
-  integrations: [mdx(), sitemap(), icon()]
+  integrations: [mdx(), sitemap(), icon()],
 });
