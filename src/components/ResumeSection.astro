@@ -1,0 +1,34 @@
+---
+interface Props {
+  title: string;
+}
+const { title }: Props = Astro.props;
+---
+
+<div class="row s-resume__section">
+  <div class="column large-3 tab-12">
+    <h3 class="section-header-allcaps">{title}</h3>
+  </div>
+  <div class="column large-9 tab-12">
+    <slot />
+  </div>
+</div>
+
+<style>
+  .s-resume__section {
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: var(--vspace-0_75);
+    margin-bottom: var(--vspace-2_5);
+  }
+
+  .s-resume__section:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  @media screen and (max-width: 800px) {
+    .s-resume__section .column:first-child {
+      text-align: center;
+    }
+  }
+</style>

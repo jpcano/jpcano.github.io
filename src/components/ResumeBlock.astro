@@ -1,0 +1,62 @@
+---
+interface Props {
+  company: string;
+  position: string;
+  startDate: string;
+  location: string;
+}
+const { company, position, startDate, location }: Props = Astro.props;
+---
+
+<div class="resume-block">
+  <div class="resume-block__header">
+    <h4 class="h3">{company}</h4>
+    <p class="resume-block__header-meta">
+      <span>{position}</span>
+      <span class="resume-block__header-date"> {startDate} </span>
+      <span class="resume-block__header-date"> {location} </span>
+    </p>
+  </div>
+  <slot />
+</div>
+
+<style>
+  .resume-block {
+    margin-bottom: var(--vspace-1_75);
+  }
+
+  .resume-block h4 {
+    line-height: 1.08;
+    margin-top: 0;
+    margin-bottom: var(--vspace-0_25);
+  }
+
+  .resume-block__header-meta {
+    font-family: var(--font-2);
+    font-size: calc(var(--text-size) * 1.1111);
+    font-style: italic;
+    margin-top: -0.4rem;
+    margin-bottom: var(--vspace-0_75);
+  }
+
+  .resume-block__header-meta span:first-child {
+    margin-right: 0.6rem;
+  }
+
+  .resume-block__header-date {
+    display: inline-block;
+    font-family: var(--font-1);
+    font-size: calc(var(--text-size) * 0.8889);
+    font-size: var(--text-sm);
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--color-text-light);
+  }
+
+  .resume-block__header-date::before {
+    content: "\2022";
+    color: var(--color-text);
+    margin-right: 0.2rem;
+  }
+</style>
