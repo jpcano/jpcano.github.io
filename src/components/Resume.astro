@@ -11,16 +11,13 @@ import ResumeSection from "../components/ResumeSection.astro";
       startDate="December 2023"
       location="Cambridge, UK"
     />
-    <div class="resume-block">
-      <div class="resume-block__header">
-        <h4 class="h3">JavaScript & NodeJS Cambridge Group</h4>
-        <p class="resume-block__header-meta">
-          <span>Organiser</span>
-          <span class="resume-block__header-date"> July 2023 </span>
-          <span class="resume-block__header-date"> Cambridge, UK </span>
-        </p>
-      </div>
 
+    <ResumeBlock
+      company="JavaScript & NodeJS Cambridge Group"
+      position="Organiser"
+      startDate="July 2023"
+      location="Cambridge, UK"
+    >
       <p>
         Running <a
           href="https://www.meetup.com/JavaScript-Cambridge/"
@@ -36,7 +33,7 @@ import ResumeSection from "../components/ResumeSection.astro";
         <li>Doing presentations and introductions</li>
         <li>Networking</li>
       </ul>
-    </div>
+    </ResumeBlock>
 
     <ResumeBlock
       company="Intellegens"
