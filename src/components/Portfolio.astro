@@ -1,0 +1,453 @@
+---
+import "../styles/basicLightbox.min.css";
+import droplet from "../images/portfolio/droplet.jpg";
+import gdroplet from "../images/portfolio/gallery/g-droplet.jpg";
+import grepositive from "../images/portfolio/gallery/repositive.jpg";
+import repositive from "../images/portfolio/repositive.jpg";
+import gintellegens from "../images/portfolio/gallery/intellegens.jpg";
+import intellegens from "../images/portfolio/intellegens.jpg";
+import gjestor from "../images/portfolio/gallery/jestor.png";
+import jestor from "../images/portfolio/jestor.png";
+import gradarweb from "../images/portfolio/gallery/radarweb.png";
+import radarweb from "../images/portfolio/radarweb.jpg";
+import gintellegensml from "../images/portfolio/gallery/intellegensml.png";
+import intellegensml from "../images/portfolio/intellegensml.jpg";
+import gresourcer from "../images/portfolio/gallery/resourcer.png";
+import resourcer from "../images/portfolio/resourcer.png";
+import galchemitelite from "../images/portfolio/gallery/alchemitelite.jpg";
+import alchemitelite from "../images/portfolio/alchemitelite.jpg";
+import gliborigamicpp from "../images/portfolio/gallery/liborigamicpp.png";
+import liborigamicpp from "../images/portfolio/liborigamicpp.jpg";
+import PortfolioItem from "./PortfolioItem.astro";
+---
+
+<!-- portfolio
+    ================================================== -->
+<section id="portfolio" class="s-portfolio target-section">
+  <div class="row s-portfolio__header">
+    <div class="column large-12">
+      <h3>A selection of my professional portfolio</h3>
+    </div>
+  </div>
+
+  <div
+    class="row collapse block-large-1-4 block-medium-1-3 block-tab-1-2 block-500-stack folio-list"
+  >
+    <PortfolioItem
+      id="modal-01"
+      mini={repositive}
+      big={grepositive}
+      title="Test"
+      link="https://www.linkedin.com/company/repositive/about"
+      tags={[
+        "Fullstack",
+        "TypeScript",
+        "Ember.js",
+        "Microservices architecture",
+      ]}
+    >
+      <p>
+        I developed a web platform for categorizing, searching and sharing PDX
+        cancer models within a team of 8 developers:
+      </p>
+      <ul>
+        <li>
+          Developed a large Ember.js frontend application using JavaScript and
+          Redux
+        </li>
+        <li>
+          Developed API endpoints in a custom backend with TypeScript and
+          Postgres
+        </li>
+        <li>
+          Worked close to our Team Lead to help to refactor monolithic backend
+          services into an event-sourcing DDD microservices architecture
+        </li>
+        <li>
+          Writing unit and acceptance tests with Mirage and BDD tests with
+          Cucumber
+        </li>
+        <li>
+          Designed a mobile-first demonstrator of our PDX platform using
+          React.js, Redux and Bulma
+        </li>
+      </ul>
+    </PortfolioItem>
+
+    <PortfolioItem
+      id="pf3"
+      mini={intellegens}
+      big={gintellegens}
+      title="Intellegens' Alchemite Platform"
+      link="https://intellegens.com"
+      tags={[
+        "Fullstack",
+        "Typescript",
+        "React",
+        "Python",
+        "Docker",
+        "CircleCI",
+        "Google Cloud",
+        "AWS",
+        "Terraform",
+      ]}
+    >
+      <p>
+        Leading the development of Alchemite Analytics™ platform, a fullstack
+        kubernetes application consiting of a React + TypeScript frontend and a
+        Node.js + GraphQL backend:
+      </p>
+      <ul>
+        <li>Line management and team leadership</li>
+        <li>
+          Defined the programming languages and main libraries to use:
+          TypeScript and React
+        </li>
+        <li>
+          Implemented React components and the initial design language of the
+          platform
+        </li>
+        <li>Designed and implemented a GraphQL backend on top of Node.js</li>
+        <li>
+          Wrote Flask endpoints using Python to extend features and business
+          logic in the platform
+        </li>
+        <li>
+          Designed and implemented a Continuous Integration (CI) pipeline using
+          Docker, Kubernetes, CircleCI and a Monorepo architecture on GithHub
+        </li>
+        <li>Facilitated Sprint Plannings and Scoping Meetings</li>
+        <li>
+          Introduced a Continuous Delivery deployment pipeline to the company
+        </li>
+        <li>Hired fullstack and frontend developers for the company</li>
+      </ul>
+    </PortfolioItem>
+
+    <PortfolioItem
+      id="pf2"
+      mini={jestor}
+      big={gjestor}
+      title="www.jestor.watch"
+      link="https://www.jestor.watch"
+      tags={["Entrepeneurship", "Watchmaking"]}
+    >
+      <p>
+        Founded an e-commerce business and built data analysis tools to trade
+        restored luxury watches. Heavily driven by content, an aggressive social
+        media strategy and programmatic tactics to source goods inspired by
+        quant analysis and stock trading.
+      </p>
+    </PortfolioItem>
+
+    <PortfolioItem
+      id="pf4"
+      mini={radarweb}
+      big={gradarweb}
+      title="CIKM AnalytiCup 2017"
+      link="https://jesus.engineer/radarweb"
+      tags={["test", "other"]}
+    >
+      <p>
+        Participating in the CIKM AnalitiCup 2017. It is a challenge organised
+        by Alibaba cloud where the participants have 4 months to predict
+        short-term rainfall amount using Machine Learning algorthms applied to
+        radar images:
+      </p>
+      <ul>
+        <li>
+          Radarplot: A library to read the CIKM AnalaytiCup 2017 dataset (<a
+            href="https://github.com/jpcano/radarplot"
+            target="_blank">https://github.com/jpcano/radarplot</a
+          >)
+        </li>
+        <li>
+          Radarweb: Used for data visualization (<a
+            href="https://github.com/jpcano/radarweb"
+            target="_blank">https://github.com/jpcano/radarweb</a
+          >). Demo:
+          <a href="https://jesus.engineer/radarweb" target="_blank"
+            >https://jesus.engineer/radarweb</a
+          >
+        </li>
+      </ul>
+    </PortfolioItem>
+
+    <PortfolioItem
+      id="pf5"
+      mini={intellegensml}
+      big={gintellegensml}
+      title="Machine Learning Contract at Intellegens Limited"
+      link="https://intellegens.com"
+      tags={[
+        "Python",
+        "Model Training",
+        "Model Validation",
+        "Pandas",
+        "NumPy",
+        "Flask",
+      ]}
+    >
+      <ul>
+        <li>
+          Wrote from scratch a load balanced k-fold validation module for
+          customer datasets using Python
+        </li>
+        <li>
+          Wrote a Python module to detect near-duplicate samples in the training
+          dataset
+        </li>
+        <li>
+          Wrote a M-Plot algorithm used to produce Property vs Property vs
+          Output visualizations
+        </li>
+        <li>
+          Introduced a new practice in the Data Science team called Visual
+          Regression Testing
+        </li>
+      </ul>
+    </PortfolioItem>
+
+    <PortfolioItem
+      id="pf7"
+      mini={alchemitelite}
+      big={galchemitelite}
+      title="Intellegens' Alchemite Lite"
+      link="https://intellegens.com"
+      tags={[
+        "C",
+        "C++",
+        "Arm Cortex-M4",
+        "EdgeML",
+        "Machine Learning",
+        "Nrf52",
+        "Neural Networks",
+        "Python",
+        "Embedded Programming",
+      ]}
+    >
+      <p>
+        An Edge ML implementation of Alchemite platform for embedded systems:
+      </p>
+      <ul>
+        <li>
+          Wrote an Edge ML firmware for the chip nrf528332 from Nordic using C
+          language
+        </li>
+        <li>
+          Built a hardware demonstrator for our Edge ML product using a nrf52-DK
+          board
+        </li>
+        <li>
+          Optimized the code so it fits within the RAM and ROM constraints
+        </li>
+        <li>
+          Worked with our team of machine learning engineers to integrate their
+          ML in the chip
+        </li>
+        <li>Handled weekly customer meetings</li>
+      </ul>
+    </PortfolioItem>
+
+    <PortfolioItem
+      id="pf6"
+      mini={resourcer}
+      big={gresourcer}
+      title="Resourcer: Internal tool used at source{d}"
+      link="https://www.linkedin.com/company/source-d/about"
+      tags={["Python", "GTK", "Google BigQuery"]}
+    >
+      <p>
+        An internal tool used extensively at sourced to speed up the process of
+        finding developers in our database.
+      </p>
+    </PortfolioItem>
+
+    <PortfolioItem
+      id="pf8"
+      mini={liborigamicpp}
+      big={gliborigamicpp}
+      title="liborigamicpp: A C++ service to extract metadata from RAW video files"
+      link="https://www.origamiplatform.io/"
+      tags={["C++", "C#", "Python", "Conan", "Video manipulation"]}
+    >
+      <p>
+        Implemented from scratch a C++ service to extract metadata from RAW
+        files in professional cinema cameras (ARRI, RED and Sony) as part of the
+        Origami Platform:
+      </p>
+      <ul>
+        <li>
+          Wrote from scratch a C++ service using ARRI, RED and Sony SDKs used to
+          extract video metadata very fast
+        </li>
+        <li>
+          Wrote a multiplaform Python build system that uses Conan to build the
+          C++ app for all the three OS: Linux, Windows and MacOS
+        </li>
+        <li>
+          Wrote the glue/handlers to interoperate the C++ software from their C#
+          and Python backend
+        </li>
+        <li>
+          Implemented a continuous delivery pipeline in GitLab to automate the
+          build and test of the C++ software
+        </li>
+        <li>Unit tested the C++ software with GoogleTest mocking framework</li>
+      </ul>
+    </PortfolioItem>
+    <div style="margin-top: 2em;">
+      <p>
+        For non-professional projects, you can check my personal GitHub: <a
+          href="https://github.com/jpcano/"
+          target="_blank">https://github.com/jpcano</a
+        >
+      </p>
+    </div>
+  </div>
+  <!-- end s-portfolio -->
+
+  <style>
+    /* ===================================================================
+ * # portfolio
+ *
+ * ------------------------------------------------------------------- */
+    .s-portfolio {
+      background-color: var(--color-gray-1);
+      padding-top: calc(6 * var(--space));
+      padding-bottom: var(--vspace-5);
+    }
+
+    .s-portfolio h3 {
+      margin-top: 0;
+    }
+
+    .s-portfolio__header {
+      text-align: center;
+    }
+
+    /* ------------------------------------------------------------------- 
+ * ## portfolio list
+ * ------------------------------------------------------------------- */
+    .folio-list {
+      max-width: 1180px;
+      margin-top: var(--vspace-2_5);
+    }
+
+    .folio-item__thumb {
+      display: block;
+      background-color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .folio-item__thumb::before {
+      z-index: 1;
+      content: "";
+      display: block;
+      background-color: rgba(0, 0, 0, 0.8);
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      -webkit-transition: all, 0.5s;
+      transition: all, 0.5s;
+    }
+
+    .folio-item__thumb::after {
+      z-index: 1;
+      content: "...";
+      font-family: var(--font-2);
+      font-weight: 300;
+      font-size: 3rem;
+      color: white;
+      display: block;
+      height: 32px;
+      width: 32px;
+      line-height: 32px;
+      margin-left: -16px;
+      margin-top: -16px;
+      text-align: center;
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5);
+      -webkit-transition:
+        all,
+        0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+      transition:
+        all,
+        0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+      position: absolute;
+      left: 50%;
+      top: 50%;
+    }
+
+    .folio-item img {
+      display: block;
+      margin: 0;
+      -webkit-transition: all, 0.5s;
+      transition: all, 0.5s;
+    }
+
+    /* on hover
+ *---------------------------------------------- */
+    .folio-item:hover .folio-item__thumb::before {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .folio-item:hover .folio-item__thumb::after {
+      opacity: 1;
+      visibility: visible;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+
+    .folio-item:hover .folio-item__thumb img {
+      -webkit-transform: scale(1.05);
+      transform: scale(1.05);
+    }
+  </style>
+  <script>
+    /* Lightbox
+     * ------------------------------------------------------ */
+    import * as basicLightbox from "basiclightbox";
+
+    const folioLinks = document.querySelectorAll(".folio-item a");
+    //console.log(folioLinks);
+
+    const modals: Array<basicLightbox.BasicLightBox> = [];
+
+    folioLinks.forEach(function (link) {
+      let modalbox = link.getAttribute("href");
+      // @ts-ignore
+      let box = document.querySelector(modalbox);
+      // @ts-ignore
+      let instance = basicLightbox.create(box, {
+        onShow: function (instance) {
+          //detect Escape key press
+          document.addEventListener("keydown", function (evt) {
+            evt = evt || window.event;
+            if (evt.keyCode === 27) {
+              instance.close();
+            }
+          });
+        },
+      });
+      modals.push(instance);
+    });
+
+    folioLinks.forEach(function (link, index) {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        modals[index].show();
+      });
+    });
+  </script>
+</section>
