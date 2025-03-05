@@ -1,7 +1,4 @@
 ---
-import "../styles/basicLightbox.min.css";
-import droplet from "../images/portfolio/droplet.jpg";
-import gdroplet from "../images/portfolio/gallery/g-droplet.jpg";
 import grepositive from "../images/portfolio/gallery/repositive.jpg";
 import repositive from "../images/portfolio/repositive.jpg";
 import gintellegens from "../images/portfolio/gallery/intellegens.jpg";
@@ -420,7 +417,6 @@ import PortfolioItem from "./PortfolioItem.astro";
     import * as basicLightbox from "basiclightbox";
 
     const folioLinks = document.querySelectorAll(".folio-item a");
-    //console.log(folioLinks);
 
     const modals: Array<basicLightbox.BasicLightBox> = [];
 
@@ -430,6 +426,7 @@ import PortfolioItem from "./PortfolioItem.astro";
       let box = document.querySelector(modalbox);
       // @ts-ignore
       let instance = basicLightbox.create(box, {
+        closable: true,
         onShow: function (instance) {
           //detect Escape key press
           document.addEventListener("keydown", function (evt) {

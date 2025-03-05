@@ -16,11 +16,11 @@
     "@astrojs/sitemap": "^3.1.4",
     "astro": "^4.8.6",
     "astro-icon": "^1.1.0",
-    "basiclightbox": "^5.0.4",
+    "basiclightbox": "5.0.3",
     "typescript": "^5.4.5"
   },
   "devDependencies": {
     "@iconify-json/fa6-brands": "^1.1.19",
-    "@types/basiclightbox": "^5.0.4"
+    "@types/basiclightbox": "5.0.3"
   }
 }
