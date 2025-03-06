@@ -25,16 +25,17 @@ const props = Astro.props;
     <Image src={props.big} alt="" />
 
     <div class="modal-popup__desc">
-      <h5>{props.title}</h5>
+      <div class="modal-popup__title">
+        <h5>{props.title}</h5>
+        <a href={props.link} target="_blank" class="modal-popup__details"
+          >Project link</a
+        >
+      </div>
       <slot />
       <ul class="modal-popup__cat">
         {props.tags.map((tag) => <li>{tag}</li>)}
       </ul>
     </div>
-
-    <a href={props.link} target="_blank" class="modal-popup__details"
-      >Project link</a
-    >
   </div>
 </div>
 <!-- end modal -->
@@ -146,10 +147,17 @@ const props = Astro.props;
 
   .modal-popup h5 {
     margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 2rem;
   }
 
   .modal-popup__desc {
     padding: 0 4rem 1.2rem;
+  }
+
+  .modal-popup__title {
+    display: flex;
+    align-items: center;
   }
 
   .modal-popup__cat {
@@ -192,14 +200,15 @@ const props = Astro.props;
   .modal-popup__details {
     background-color: rgba(0, 0, 0, 0.3);
     font-size: var(--text-sm);
-    line-height: calc(var(--vspace-1_5) - 2px);
+    line-height: calc(var(--vspace-1_25) - 2px);
     border: 1px solid rgba(255, 255, 255, 0.15);
     color: white;
     border-radius: var(--border-radius);
     padding: 0 1.4rem;
-    position: absolute;
-    top: var(--vspace-1_25);
-    left: 4rem;
+    text-wrap: nowrap;
+    /* position: absolute; */
+    /* top: var(--vspace-1_25); */
+    /* left: 4rem; */
   }
 
   .modal-popup__details:hover,
