@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import petros from "../images/avatars/petros.jpeg";
+import tom_mitchell from "../images/avatars/tom_mitchell.jpeg";
 ---
 
 <!-- testimonials
@@ -18,6 +19,40 @@ import petros from "../images/avatars/petros.jpeg";
     <div class="column">
       <div class="swiper-container testimonial-slider">
         <div class="swiper-wrapper">
+          <div class="testimonial-slider__slide swiper-slide">
+            <div class="testimonial-slider__author">
+              <Image
+                src={tom_mitchell}
+                alt="Tom Mitchell"
+                class="testimonial-slider__avatar"
+              />
+              <cite class="testimonial-slider__cite">
+                <strong>Tom Mitchell</strong>
+                <span>CTO at Origami & Mission Digital</span>
+              </cite>
+            </div>
+            <p>
+              Jesus Cano joined our team as a backend developer, working
+              primarily with C++ to integrate SDKs into our .NET code stack
+              within the high-end cinema domain. He quickly onboarded, grasped
+              complex problems with ease, and executed his work efficiently. His
+              ability to provide clear feedback on his progress and time
+              management was invaluable.
+            </p>
+
+            <p>
+              Beyond his technical skills, Jesus was a great team player—he not
+              only delivered excellent work but also actively supported his
+              colleagues and contributed to a positive team dynamic. He met all
+              key goals, often exceeding our expectations.
+            </p>
+            <p>
+              Jesus is professional, a strong communicator, and comes with a
+              valuable network of developers should additional support be
+              needed. I’d gladly welcome him back for another project anytime.
+            </p>
+          </div>
+          <!-- end testimonial-slider__slide -->
           <div class="testimonial-slider__slide swiper-slide">
             <div class="testimonial-slider__author">
               <Image
@@ -41,16 +76,17 @@ import petros from "../images/avatars/petros.jpeg";
           </div>
           <!-- end testimonial-slider__slide -->
         </div>
-        <!-- end testimonial slider swiper-wrapper -->
-
-        <div class="swiper-pagination"></div>
       </div>
-      <!-- end swiper-container -->
+      <!-- end testimonial slider swiper-wrapper -->
+
+      <div class="swiper-pagination"></div>
     </div>
-    <!-- end column -->
+    <!-- end swiper-container -->
   </div>
-  <!-- end row -->
+  <!-- end column -->
 </section>
+<!-- end row -->
+
 <!-- end s-testimonials -->
 <style>
   /* ===================================================================
