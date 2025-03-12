@@ -23,6 +23,7 @@ import tom_mitchell from "../images/avatars/tom_mitchell.jpeg";
             <div class="testimonial-slider__author">
               <Image
                 src={tom_mitchell}
+                width={300}
                 alt="Tom Mitchell"
                 class="testimonial-slider__avatar"
               />
@@ -57,7 +58,8 @@ import tom_mitchell from "../images/avatars/tom_mitchell.jpeg";
             <div class="testimonial-slider__author">
               <Image
                 src={petros}
-                alt="Petros"
+                width={300}
+                alt="Petros Koklas"
                 class="testimonial-slider__avatar"
               />
               <cite class="testimonial-slider__cite">
@@ -66,12 +68,12 @@ import tom_mitchell from "../images/avatars/tom_mitchell.jpeg";
               </cite>
             </div>
             <p>
-              I worked with Jesus at sourced. He is a very strong skilled
-              developer with true passion about coding. He is very good with
-              fullstack development with decent frontend knowledge and very deep
-              understanding of backend infrastructures. If you need someone that
-              knows how to write code that works, using the best practises
-              available, Jesus is that person.
+              Jesus is a very strong skilled developer with true passion about
+              coding. He is very good with fullstack development with decent
+              frontend knowledge and very deep understanding of backend
+              infrastructures. If you need someone that knows how to write code
+              that works, using the best practises available, Jesus is that
+              person.
             </p>
           </div>
           <!-- end testimonial-slider__slide -->
@@ -192,6 +194,14 @@ import tom_mitchell from "../images/avatars/tom_mitchell.jpeg";
 
   .testimonial-slider__slide {
     position: relative;
+  }
+
+  .testimonial-slider__slide p {
+    margin-bottom: var(--vspace-0_5);
+  }
+
+  .testimonial-slider__slide p:last-child {
+    margin-bottom: var(--vspace-1);
   }
 
   .testimonial-slider__author {
