@@ -31,7 +31,7 @@ Inspecting the watch wheels is an essential part of the process of servicing a w
 
 **Anomaly Detection Mode**
 
-It detects coarse anomalies in the overall structure of the wheel. When servicing a watch it is very common to find broken or bent teeth, particularly on the wheels that have a higher torque like the ones in the keyless works (winding wheels).
+It detects coarse anomalies in the overall structure of the wheel. When servicing a watch it is very common to find broken or bent teeth, particularly on the wheels that have a higher torque like the ones in the keyless works (winding wheels). Fun fact: the 3 broken teeth in the ratchet wheel below were the cause of the failure of this [Oris Big Crown Pointer Date](https://youtu.be/sLatG9oVuu8?si=iLpATBQoDIkOIMZJ).
 
 ![Anomaly Detection Mode. In the example: 3 broken teeth in a ratchet wheel](images/elektor-smt32/anomaly.png)
 
