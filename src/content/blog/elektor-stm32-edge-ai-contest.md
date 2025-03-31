@@ -9,11 +9,11 @@ heroImage: "./images/elektor-smt32/hero.png"
 
 ## Abstract
 
-In this post, I present a proof of concept Edge AI embedded device that can be used to adaptatively detect anomalies on watch wheels in real-time, a task that has been traditionally done by direct observation with rudimentary tools by an experienced watchmaker. The device is based on a state-of-art Edge AI microcontroller that performs image segmentation, landmark and pose detection of the wheels, an optical system that feeds macro video to a microcontroller and a display that shows a video stream with overlaid information to the user through an augmented reality interface.
+In this post, I present a proof of concept Edge AI embedded device that can be used to adaptatively detect anomalies on watch wheels in real-time, a task that has been traditionally done by direct observation with rudimentary tools by an experienced watchmaker. The device is based on a state-of-art Edge AI microcontroller that performs image segmentation, landmark and pose detection of the wheels, an optical system that feeds macro video to a microcontroller and a display that shows a video stream with overlaid information to the user through an augmented reality interface. This proposal has been submited to [Elektor STM32 Edge AI competition](https://www.elektormagazine.com/stm32ai).
 
 ## Rationale
 
-The intent of this prototype is to ideate an useful tool that can be part of the quality control workflow of a watchmaker or precision machinist. This can be extended to QC in other precision manufacture industries as well. Finally, this also serves as an exercise to validate if it is possible in 2025 to build a low-cost and low-power Edge AI device for such applications.
+I am a [professional engineer](https://jesus.engineer/#resume) and [amateur watchmaker](https://www.youtube.com/@jesusthewatchmaker) and bringing together the new field of Edge AI with the traditional art of horology looks like something I would love to do. The intent of this prototype is to ideate an useful tool that can be part of the quality control workflow of a watchmaker or precision machinist. This can be extended to QC in other precision manufacture industries as well. Finally, this also serves as an exercise to validate if it is possible in 2025 to build a low-cost and low-power Edge AI device for such applications.
 
 ## Theory of operation
 
