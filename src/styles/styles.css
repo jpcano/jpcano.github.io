@@ -262,8 +262,8 @@ h6, .h6 {
 }
 
 figure img, p img {
-    margin: 0;
-    vertical-align: bottom;
+    margin: auto;
+    display:block;
 }
 
 em, i, strong, b {
@@ -295,13 +295,14 @@ figure {
 }
 
 figure img+figcaption {
-    margin-top: var(--vspace-1);
+    margin-top: var(--vspace-0_5);
 }
 
 figcaption {
     font-size: var(--text-sm);
     text-align: center;
     margin-bottom: 0;
+    font-weight: bold;
 }
 
 var, kbd, samp {
