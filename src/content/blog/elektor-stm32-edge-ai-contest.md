@@ -1,7 +1,9 @@
 ---
 title: "Elektor STM32 Edge AI Contest Idea"
+subtitle: "Edge AI meets watchmaking"
 description: "An initial post to test how Astro can generate static websites"
 pubDate: "Mar 31 2025"
+updatedDate: "Apr 01 2025"
 heroImage: "./images/elektor-smt32/hero.png"
 ---
 
