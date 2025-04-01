@@ -135,14 +135,14 @@ Perhaps the most direct application of this prototype would be an AI-powered wat
 
 The project will start as soon as the STM32N6570-DK Discovery Kit arrives (🤞).
 
-1. Set up the development tools and toolchains to run a basic Model Zoo demo on the board.
-1. Explore the demos and examples available in the STM model zoo as well as the case studies.
-1. Getting familiar with the development tools and methods for this chip, particularly the scripts in the STM Model Zoo repository and X-Cube-AI documentation.
-1. Development of a semantic segmentation model.
-1. Development of a landmark detection algorithm.
-1. Development of a pose detection algorithm.
-1. Curating a high-quality training dataset for watch wheels.
-1. Optimization/Quantisation iterations.
-1. Development of a UI with overlayed information.
-1. Write the final documentation of the project.
-1. Submit the project to Elektor's competition.
+1. ✨ Set up the development tools and toolchains to run a basic Model Zoo demo on the board.
+1. 🗺️ Explore the demos and examples available in the STM model zoo as well as the case studies.
+1. 📚 Getting familiar with the development tools and methods for this chip, particularly the scripts in the STM Model Zoo repository and X-Cube-AI documentation.
+1. 🖼️ Development of a semantic segmentation model.
+1. 📍 Development of a landmark detection algorithm.
+1. 👉 Development of a pose detection algorithm.
+1. 📚 Curating a high-quality training dataset for watch wheels.
+1. 📚 Optimization/Quantisation iterations.
+1. 📚 Development of a UI with overlayed information.
+1. ✍️ Write the final documentation of the project.
+1. ✉️ Submit the project to Elektor's competition. :grinning:
