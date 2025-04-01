@@ -147,4 +147,4 @@ The project will start as soon as the STM32N6570-DK Discovery Kit arrives (🤞)
 1. 📚 Optimization/Quantisation iterations.
 1. 📚 Development of a UI with overlayed information.
 1. ✍️ Write the final documentation of the project.
-1. ✉️ Submit the project to Elektor's competition. :grinning:
+1. ✉️ Submit the project to Elektor's competition.
