@@ -123,7 +123,7 @@ Most certainly I will need to curate a solid dataset of labeled watch wheels for
 
 ## Industry applications
 
-The know-how showed in this prototype can used in a wide variety of QC scenarios in the manufacturing industry. However, there are some products that may naturally born from this proposal. The most obvious one is a digital microscope with AI capabilities. The low cost and low power consumption of the STM32N6 chip may benefit such applications. Even if the microscope is not battery-powered, the low power consumption of the chip will accommodate a design without active cooling reducing the costs and miniaturizing the design even further.
+The know-how showed in this prototype can be used in a wide variety of QC scenarios in the manufacturing industry. Furthermore, some products may naturally born from this proposal. The most obvious one is a digital microscope with AI capabilities. The low cost and low power consumption of the STM32N6 chip may benefit such applications. Even if the microscope is not battery-powered, the low power consumption of the chip will accommodate a design without active cooling reducing the costs and miniaturizing the design.
 
 ![Commercial Digital Microscope (No AI capable)](images/elektor-smt32/digital_microscope3.webp)
 
@@ -133,7 +133,7 @@ Perhaps the most direct application of this prototype would be an AI-powered wat
 
 ## Roadmap
 
-The project will start as soon as the STM32N6570-DK Discovery Kit arrives (fingers crossed).
+The project will start as soon as the STM32N6570-DK Discovery Kit arrives (🤞).
 
 1. Set up the development tools and toolchains to run a basic Model Zoo demo on the board.
 1. Explore the demos and examples available in the STM model zoo as well as the case studies.
