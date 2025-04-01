@@ -39,7 +39,7 @@ It detects coarse anomalies in the overall structure of the wheel. When servicin
 
 It detects the overall wear of the wheel’s teeth and it assigns a score on how well it compares with an ideal state. This is a common problem in watches that have not received proper servicing over decades. Old oil or moisture can mix with grit or dirt forming an abrasive substance that can accelerate the wear of the teeth over time.
 
-![Teeth Wear Mode. In the example: a weared center wheel that is 98% close to the ideal](images/elektor-smt32/teeth.png)
+![Teeth Wear Mode. In the example: a worn off center wheel that is 98% close to the ideal](images/elektor-smt32/teeth.png)
 
 **Truing In The Flat Mode**
 
@@ -49,9 +49,9 @@ It measures how flat is the wheel to the pivots. In an ideal wheel, the pivots s
 
 **Pivot Wear Mode**
 
-The pivots of the wheel, made of steel, are rotating in a bearing made of corundum (ruby), a mineral much harder than steel. If old hardened oil mixed with grit or dirt is present in this jewel it can wear the pivots. Weared-off pivots have a distinctive mushroom shape. The device measures the wear of the pivot themselves, 0° being straigh and healthy pivots or higher if they form a conical/mushroom shape.
+The pivots of the wheel, made of steel, are rotating in a bearing made of corundum (ruby), a mineral much harder than steel. If old hardened oil mixed with grit or dirt is present in this jewel it can wear the pivots. Worn off pivots have a distinctive mushroom shape. The device measures the wear of the pivot themselves, 0° being straigh and healthy pivots or higher if they form a conical/mushroom shape.
 
-![Pivot Wear Mode. Example: a 3rd wheel with a weared off bottom pivot 2° close to the ideal](images/elektor-smt32/pivot.png)
+![Pivot Wear Mode. Example: a 3rd wheel with a worn off bottom pivot 2° close to the ideal](images/elektor-smt32/pivot.png)
 
 ## About watchmaking
 
@@ -63,7 +63,7 @@ Servicing mechanical watches is a process where a skilled watchmaker restores a 
 
 1. **Disassembling**: each one of the components of the watch is removed from the movement.
 1. **Inspection**: each component is thoroughly inspected through some sort of magnification device, traditionally a watchmaker/jeweller loupe (read the following section for more information).
-1. **Fault finding**: In this step, closely related to the previous one, the watchmaker investigates the cause or causes of the malfunctioning of the watch. She pays attention to wear-off or broken components, lack of lubrication, rust and water damage or missing pieces.
+1. **Fault finding**: In this step, closely related to the previous one, the watchmaker investigates the cause or causes of the malfunctioning of the watch. She pays attention to worn off or broken components, lack of lubrication, rust and water damage or missing pieces.
 1. **Cleaning**: each component is thoroughly cleaned with specialised degreasing and rinsing liquids either manually or with a watchmaking cleaning machine. Rust, if present, is treated with special rust converter products.
 1. **Reassembly**: the watch is carefully put back together paying attention to the level of cleanliness of each part.
 1. **Oiling**: Several types of oils and greases are applied strategically to specific locations of the watch following the guidelines of the movement datasheet or by using the watchmaker experience
