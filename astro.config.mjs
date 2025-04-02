@@ -7,7 +7,15 @@ import rehipeFigure from "rehype-figure"
 
 export default defineConfig({
   site: 'https://jesus.engineer',
-  integrations: [mdx(), sitemap(), icon()],
+  integrations: [mdx(), icon(), sitemap({
+    i18n: {
+      defaultLocale: 'en',
+      locales: {
+        en: 'en-US',
+      },
+    },
+    filter: (page) => page !== 'https://jesus.engineer/portfolio/',
+  })],
   markdown: {
     remarkPlugins: [ [remarkToc, { heading: 'contents',} ] ],
     rehypePlugins: [rehipeFigure],
