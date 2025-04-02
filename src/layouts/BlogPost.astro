@@ -20,7 +20,7 @@ const ogImage = await getImage({ src: heroImage, format: "jpg", height: 200 });
 >
   <main>
     <div class="row">
-      <a class="index-button" href="/blog">Back to index</a>
+      <a class="index-button" href="/blog">« Back to index</a>
       <article>
         <div class="hero-image">
           <Image src={heroImage} alt={title} width={POST_WIDTH} height={510} />
@@ -103,7 +103,7 @@ const ogImage = await getImage({ src: heroImage, format: "jpg", height: 200 });
   }
   .index-button {
     max-width: calc(100% - 2em);
-    padding: 1em;
+    /* padding: 1em; */
     margin-bottom: 4rem;
   }
   @media screen and (max-width: 800px) {
