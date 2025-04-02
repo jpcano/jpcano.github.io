@@ -15,14 +15,14 @@ const props = Astro.props;
 
 <div class="column folio-item">
   <a href={"#" + props.id} class="folio-item__thumb">
-    <Image src={props.mini} alt="" />
+    <Image src={props.mini} alt={props.title} />
   </a>
 </div>
 <!-- end folio-item -->
 
 <div id={props.id} hidden>
   <div class="modal-popup">
-    <Image src={props.big} alt="" />
+    <Image src={props.big} alt={props.title} />
 
     <div class="modal-popup__desc">
       <div class="modal-popup__title">
