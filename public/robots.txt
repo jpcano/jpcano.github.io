@@ -1,4 +1,5 @@
 User-agent: *
 Disallow: /portfolio/
+Disallow: /radarweb/
 
 Sitemap: https://jesus.engineer/sitemap-index.xml
