@@ -309,21 +309,47 @@ var, kbd, samp {
     font-family: var(--font-mono);
 }
 
-code {
-	padding: 2px 5px;
-	background-color: rgb(var(--gray-light));
-	border-radius: 2px;
-    width: 100%;
-}
 pre {
-	padding: 1.5em;
-	border-radius: 8px;
-    width:100%
-}
-pre > code {
-	all: unset;
+	padding: 1em;
+	border-radius: 6px;
+    width: 100%;
+    /* text-wrap: auto;  */
+    overflow-x: auto;
+    white-space-collapse: preserve;
+    text-wrap-mode: wrap;
+    line-height: 1em;
 }
 
+code {
+    font-size: var(--text-sm);
+    font-family: 'Courier New', Courier, monospace;
+    @apply block leading-tight p-2 pl-1;
+	counter-reset: step;
+	counter-increment: step 0;
+
+}
+
+pre code .line {
+	@apply relative;
+}
+
+pre code .line::before {
+	@apply absolute overflow-hidden w-7 h-4 -left- top-0 text-right;
+    padding-right: 1em;
+	content: counter(step);
+	counter-increment: step;
+	color: rgba(115, 138, 148, 0.4);
+}
+
+/* For some reason astro always adds a blank .line element at the bottom */
+pre code .line:last-child {
+    display:none;
+}
+
+/* pre > code {
+	all: unset;
+}
+ */
 
 del {
     text-decoration: line-through;

@@ -19,5 +19,8 @@ export default defineConfig({
   markdown: {
     remarkPlugins: [ [remarkToc, { heading: 'contents',} ] ],
     rehypePlugins: [rehipeFigure],
+    shikiConfig: {
+      theme: 'plastic',
+    }
   },
 });
