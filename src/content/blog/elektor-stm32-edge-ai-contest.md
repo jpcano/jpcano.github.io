@@ -1,6 +1,6 @@
 ---
-title: "Edge AI meets Watchmaking"
-subtitle: "Edge AI meets watchmaking"
+title: "Edge AI meets watchmaking"
+subtitle: "Elektor STM32 Edge AI Contest Idea"
 description: "An initial post to test how Astro can generate static websites"
 pubDate: "Mar 31 2025"
 updatedDate: "Apr 01 2025"
