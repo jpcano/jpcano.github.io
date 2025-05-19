@@ -9,8 +9,8 @@ import gradarweb from "../images/portfolio/gallery/radarweb.png";
 import radarweb from "../images/portfolio/radarweb.jpg";
 import gintellegensml from "../images/portfolio/gallery/intellegensml.png";
 import intellegensml from "../images/portfolio/intellegensml.jpg";
-import gresourcer from "../images/portfolio/gallery/resourcer.png";
-import resourcer from "../images/portfolio/resourcer.png";
+import gstm32 from "../images/portfolio/gallery/elektor-stm32ai.png";
+import stm32 from "../images/portfolio/elektor-stm32ai.png";
 import galchemitelite from "../images/portfolio/gallery/alchemitelite.jpg";
 import alchemitelite from "../images/portfolio/alchemitelite.jpg";
 import gliborigamicpp from "../images/portfolio/gallery/liborigamicpp.png";
@@ -194,15 +194,26 @@ import PortfolioItem from "./PortfolioItem.astro";
 
     <PortfolioItem
       id="pf6"
-      mini={resourcer}
-      big={gresourcer}
-      title="Resourcer"
-      link="https://www.linkedin.com/company/source-d/about"
-      tags={["Python", "Qt", "Google BigQuery"]}
+      mini={stm32}
+      big={gstm32}
+      title="Edge AI meets watchmaking"
+      link="https://jesus.engineer/blog/elektor-stm32-edge-ai-contest/"
+      tags={[
+        "STM32N6",
+        "C++",
+        "TensorFlow",
+        "Keras",
+        "Computer Vision",
+        "Edge AI",
+        "Embedded",
+      ]}
     >
       <p>
-        An internal tool used extensively at sourced to speed up the process of
-        finding developers in our database.
+        An Edge AI embedded device that can be used to detect anomalies on watch
+        wheels in real-time. This project has been submitted to <a
+          href="https://www.elektormagazine.com/stm32ai"
+          target="_blank">Elektor STM32 Edge AI Contest.</a
+        >
       </p>
     </PortfolioItem>
 
