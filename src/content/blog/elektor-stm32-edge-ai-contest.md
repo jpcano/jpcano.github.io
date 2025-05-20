@@ -3,7 +3,7 @@ title: "Edge AI meets watchmaking"
 subtitle: "Elektor STM32 Edge AI Contest Idea"
 description: "An initial post to test how Astro can generate static websites"
 pubDate: "Mar 31 2025"
-updatedDate: "Apr 01 2025"
+updatedDate: "May 20 2025"
 heroImage: "./images/elektor-smt32/hero.png"
 ---
 
@@ -15,7 +15,7 @@ In this post, I present a proof of concept Edge AI embedded device that can be u
 
 ## Rationale
 
-I am a [professional engineer](https://jesus.engineer/#resume) and [amateur watchmaker](https://www.youtube.com/@jesusthewatchmaker) and bringing together the new field of Edge AI with the traditional art of horology looks like something I would love to do. This prototype intends to ideate a helpful tool that can be part of the quality control workflow of a watchmaker or precision machinist. This can be extended to QC in other precision manufacturing industries as well. Finally, this also serves as an exercise to validate if it is possible in 2025 to build a low-cost and low-power Edge AI device for such applications.
+This prototype intends to ideate a helpful tool that can be part of the quality control workflow of a watchmaker or precision machinist. This can be extended to QC in other precision manufacturing industries as well. Finally, this also serves as an exercise to validate if it is possible in 2025 to build a low-cost and low-power Edge AI device for such applications.
 
 ## Theory of operation
 
@@ -135,16 +135,18 @@ Perhaps the most direct application of this prototype would be an AI-powered wat
 
 ## Roadmap
 
-The project will start as soon as the STM32N6570-DK Discovery Kit arrives (🤞).
-
 1. ✨ Set up the development tools and toolchains to run a basic Model Zoo demo on the board.
 1. 🗺️ Explore the demos and examples available in the STM model zoo as well as the case studies.
 1. 📚 Getting familiar with the development tools and methods for this chip, particularly the scripts in the STM Model Zoo repository and X-Cube-AI documentation.
 1. 🖼️ Development of a semantic segmentation model.
 1. 📍 Development of a landmark detection algorithm.
 1. 👉 Development of a pose detection algorithm.
-1. 📚 Curating a high-quality training dataset for watch wheels.
-1. 📚 Optimization/Quantisation iterations.
-1. 📚 Development of a UI with overlayed information.
+1. 📈 Curating a high-quality training dataset for watch wheels.
+1. 🧮 Optimization/Quantisation iterations.
+1. 🖱️ Development of a UI with overlayed information.
 1. ✍️ Write the final documentation of the project.
 1. ✉️ Submit the project to Elektor's competition.
+
+## About the author
+
+My name is Jesus Cano. I am a [professional engineer](https://jesus.engineer) and [amateur watchmaker](https://www.youtube.com/@jesusthewatchmaker).
