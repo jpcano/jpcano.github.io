@@ -1,7 +1,7 @@
 ---
 title: "Edge AI meets watchmaking"
 subtitle: "Elektor STM32 Edge AI Contest Idea"
-description: "An initial post to test how Astro can generate static websites"
+description: "A proof of concept device used to detect anomalies on watch wheels using the STM32N6 chip"
 pubDate: "Mar 31 2025"
 updatedDate: "May 20 2025"
 heroImage: "./images/elektor-smt32/hero.png"
