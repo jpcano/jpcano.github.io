@@ -121,7 +121,7 @@ With this in mind, we may consider building or fine-tuning a preexisting model (
 
 Algorithms for pose detection of the wheel will be helpful, particularly in assessing accurate distances and angles in different features of the wheels regardless of their orientation.
 
-Most certainly I will need to curate a solid dataset of labeled watch wheels for training or fine-tuning purposes. My lightbox and macro camera along with the large inventory of old watch wheels I have in my workshop will be useful for this purpose.
+For training purposes we may generate a synthetic dataset of watch wheels with a parametric CAD software.
 
 ## Industry applications
 
