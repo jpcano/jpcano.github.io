@@ -7,5 +7,5 @@ heroImage: "./images/blog-placeholder-3.jpg"
 
 He laughed, he sang\
 but in his cup\
-a tear of fire mixed with the wine.
+a tear of fire mixed with wine.
 
