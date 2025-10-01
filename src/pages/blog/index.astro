@@ -5,11 +5,11 @@ import { Image } from "astro:assets";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
 const posts = (await getCollection("blog")).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 ---
 
-<BaseLayout current="/blog" title="Blog index - Jesus Cano" withIntercom>
+<BaseLayout current="/blog" title="Blog index - Jesus Cano">
   <main>
     <div class="row">
       <ul>
