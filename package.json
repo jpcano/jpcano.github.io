@@ -15,15 +15,15 @@
     "@astrojs/rss": "^4.0.12",
     "@astrojs/sitemap": "^3.6.0",
     "astro": "^5.14.1",
-    "astro-icon": "^1.1.0",
+    "astro-icon": "^1.1.5",
     "astro-seo": "^0.8.4",
-    "basiclightbox": "5.0.3",
+    "basiclightbox": "^5.0.4",
     "rehype-figure": "^1.0.1",
     "remark-toc": "^9.0.0",
-    "typescript": "^5.4.5"
+    "typescript": "^5.9.3"
   },
   "devDependencies": {
-    "@iconify-json/fa6-brands": "^1.1.19",
-    "@types/basiclightbox": "5.0.3"
+    "@iconify-json/fa6-brands": "^1.2.6",
+    "@types/basiclightbox": "^5.0.4"
   }
 }
