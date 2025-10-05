@@ -16,7 +16,7 @@ const posts = (await getCollection("blog")).sort(
         {
           posts.map((post, i) => (
             <li>
-              <a href={`/blog/${post.slug}/`} aria-label={post.data.title}>
+              <a href={`/blog/${post.id}/`} aria-label={post.data.title}>
                 <Image
                   src={post.data.heroImage}
                   alt={post.data.title}
