@@ -7,7 +7,11 @@ import { Icon } from "astro-icon/components";
 <div>
   {
     socialData.map((social) => (
-      <a href={social.link} target="”_blank”" aria-label={social.title}>
+      <a
+        href={social.link}
+        target={social.self_link ? "_self" : "_blank"}
+        aria-label={social.title}
+      >
         <i aria-hidden="true">
           <Icon name={social.icon} title={social.title} />
         </i>
