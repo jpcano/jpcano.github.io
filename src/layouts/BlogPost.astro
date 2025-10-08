@@ -4,6 +4,7 @@ import FormattedDate from "../components/FormattedDate.astro";
 import { Image, getImage } from "astro:assets";
 import BaseLayout from "./BaseLayout.astro";
 import { POST_WIDTH } from "../consts";
+import { Icon } from "astro-icon/components";
 
 type Props = CollectionEntry<"blog">["data"];
 
@@ -20,7 +21,10 @@ const ogImage = await getImage({ src: heroImage, format: "jpg", height: 200 });
 >
   <main>
     <div class="row">
-      <a class="index-button" href="/blog">« Back to index</a>
+      <a class="index-button" href="/blog">
+        <Icon name="fa6-solid:circle-left" />
+        <span>Back to index</span>
+      </a>
       <article>
         <div class="hero-image">
           <Image src={heroImage} alt={title} width={POST_WIDTH} height={510} />
@@ -44,7 +48,10 @@ const ogImage = await getImage({ src: heroImage, format: "jpg", height: 200 });
           <slot />
         </div>
       </article>
-      <a class="index-button" href="/blog">« Back to index</a>
+      <a class="index-button" href="/blog">
+        <Icon name="fa6-solid:circle-left" />
+        <span>Back to index</span>
+      </a>
     </div>
   </main>
 </BaseLayout>
@@ -103,8 +110,10 @@ const ogImage = await getImage({ src: heroImage, format: "jpg", height: 200 });
   }
   .index-button {
     max-width: calc(100% - 2em);
-    /* padding: 1em; */
     margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
   }
   @media screen and (max-width: 800px) {
     main {
