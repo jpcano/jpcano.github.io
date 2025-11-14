@@ -1,7 +1,5 @@
 # Jesus Cano's personal website
 
-![Website wallpaper](https://github.com/jpcano/jpcano.github.io/blob/master/src/images/hero2.jpg)
-
 View [demo](https://jesus.engineer).
 
 Features:
