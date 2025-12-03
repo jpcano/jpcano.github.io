@@ -98,7 +98,7 @@ const items = [
        */
 
       const currentLI = document.querySelector<HTMLElement>(
-        ".s-header__nav a[href*=" + sectionId + "]"
+        ".s-header__nav a[href*=" + sectionId + "]",
       )?.parentElement as HTMLElement;
 
       //console.log(currentLI);
@@ -408,8 +408,8 @@ const items = [
       visibility: visible;
       -webkit-transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
       transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
-      -webkit-transition-delay: 0.5s;
-      transition-delay: 0.5s;
+      -webkit-transition-delay: 0.1s;
+      transition-delay: 0.1s;
     }
   }
 
