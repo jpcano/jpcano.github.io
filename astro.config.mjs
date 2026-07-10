@@ -4,6 +4,7 @@ import sitemap from '@astrojs/sitemap';
 import remarkToc from 'remark-toc';
 import icon from "astro-icon";
 import rehipeFigure from "rehype-figure"
+import { unified } from '@astrojs/markdown-remark';
 
 export default defineConfig({
   site: 'https://jesus.engineer',
@@ -17,8 +18,11 @@ export default defineConfig({
     filter: (page) => page !== 'https://jesus.engineer/portfolio/',
   })],
   markdown: {
-    remarkPlugins: [ [remarkToc, { heading: 'contents',} ] ],
-    rehypePlugins: [rehipeFigure],
+    //TODO: Use Sätteri instead because remark/rehype are deprecated
+    processor: unified({
+      remarkPlugins: [[remarkToc, { heading: 'contents', }]],
+      rehypePlugins: [rehipeFigure]
+    }),
     shikiConfig: {
       theme: 'plastic',
     }
