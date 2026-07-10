@@ -2,7 +2,7 @@
 title: "The Law of the Bow"
 description: "The law of the bow, La ley del arco, André Malby, Fernando Sánchez Dragó"
 pubDate: "Nov 30 2025"
-heroImage: "malby-drago.png"
+heroImage: "malby-drago2.png"
 ---
 
 
