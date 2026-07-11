@@ -24,7 +24,7 @@ pnpm-debug.log*
 .idea/
 
 # Visual Studio Code workspace settings
-.vscode
+#.vscode
 
 # Some zip files I have in the root folder
 /*.zip
