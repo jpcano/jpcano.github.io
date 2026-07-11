@@ -3,7 +3,9 @@
   "compilerOptions": {
     "strictNullChecks": true
   },
+  "include": [".astro/types.d.ts", "**/*"],
   "exclude": [
+    "dist",
     "public/camend2019",
     "public/carto-fe1",
     "public/radarweb",
